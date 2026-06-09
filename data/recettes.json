@@ -1,14 +1,14 @@
 [
   {
     "id": "pad-thai-crevettes",
-    "nom": "Pad ThaÃ¯ aux crevettes",
-    "categorie": "salÃ©",
-    "culture": "ThaÃ¯",
+    "nom": "Pad ThaÃÂ¯ aux crevettes",
+    "categorie": "salÃÂ©",
+    "culture": "ThaÃÂ¯",
     "proteine": "poisson/fruits de mer",
     "glucide": "nouilles",
     "vibe": [
-      "rÃ©confortant",
-      "Ã©tÃ©"
+      "rÃÂ©confortant",
+      "ÃÂ©tÃÂ©"
     ],
     "temps": 30,
     "image": null,
@@ -18,12 +18,12 @@
   {
     "id": "tiramisu",
     "nom": "Tiramisu",
-    "categorie": "sucrÃ©",
+    "categorie": "sucrÃÂ©",
     "culture": "Italien",
     "proteine": "oeuf",
     "glucide": "aucun",
     "vibe": [
-      "rÃ©confortant",
+      "rÃÂ©confortant",
       "festif"
     ],
     "temps": 25,
@@ -34,16 +34,29 @@
   {
     "id": "salade-pomme-de-terreharicots-vertsthon",
     "nom": "Salade pomme de terre/haricots-verts/thon",
-    "categorie": "salé",
+    "categorie": "salÃ©",
     "culture": "Famille",
     "proteine": "poisson/fruits de mer",
-    "glucide": "légumineuses",
+    "glucide": "lÃ©gumineuses",
     "vibe": [
-      "réconfortant"
+      "rÃ©confortant"
     ],
     "temps": null,
     "image": null,
     "recette": true,
+    "notes": null
+  },
+  {
+    "id": "pancakes",
+    "nom": "Pancakes",
+    "categorie": "sucré",
+    "culture": "/",
+    "proteine": "aucun",
+    "glucide": null,
+    "vibe": [],
+    "temps": null,
+    "image": null,
+    "recette": false,
     "notes": null
   }
 ]
