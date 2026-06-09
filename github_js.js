@@ -5,8 +5,8 @@
 // ============================================================
 
 // ⚠️ À MODIFIER : votre nom d'utilisateur et le nom du repo
-const GITHUB_USER = "votre-username";
-const GITHUB_REPO = "votre-repo";
+const GITHUB_USER = "aloysemaille";
+const GITHUB_REPO = "https://aloysemaille.github.io/RecipiesStorage/";
 const FICHIER_RECETTES = "data/recettes.json"; // Chemin dans le repo
 
 // ============================================================
