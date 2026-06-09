@@ -1,0 +1,28 @@
+[
+  {
+    "id": "pad-thai-crevettes",
+    "nom": "Pad Thaï aux crevettes",
+    "categorie": "salé",
+    "culture": "Thaï",
+    "proteine": "poisson/fruits de mer",
+    "glucide": "nouilles",
+    "vibe": ["réconfortant", "été"],
+    "temps": 30,
+    "image": null,
+    "recette": false,
+    "notes": "Avec sauce tamarin maison, bien meilleur"
+  },
+  {
+    "id": "tiramisu",
+    "nom": "Tiramisu",
+    "categorie": "sucré",
+    "culture": "Italien",
+    "proteine": "oeuf",
+    "glucide": "aucun",
+    "vibe": ["réconfortant", "festif"],
+    "temps": 25,
+    "image": null,
+    "recette": true,
+    "notes": null
+  }
+]

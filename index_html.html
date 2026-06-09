@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes Recettes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🍽️ Mes Recettes</h1>
+    <a href="ajouter.html" class="btn-ajouter">+ Ajouter une recette</a>
+  </header>
+
+  <!-- ===== FILTRES ===== -->
+  <section id="filtres">
+
+    <!-- Filtre catégorie (salé / sucré / boisson) -->
+    <div class="groupe-filtre">
+      <span class="filtre-label">Catégorie</span>
+      <div class="filtre-boutons" id="filtre-categorie"></div>
+    </div>
+
+    <!-- Filtre culture (Japonais, Italien...) -->
+    <div class="groupe-filtre">
+      <span class="filtre-label">Culture</span>
+      <div class="filtre-boutons" id="filtre-culture"></div>
+    </div>
+
+    <!-- Filtre protéine -->
+    <div class="groupe-filtre">
+      <span class="filtre-label">Protéine</span>
+      <div class="filtre-boutons" id="filtre-proteine"></div>
+    </div>
+
+    <!-- Filtre vibe -->
+    <div class="groupe-filtre">
+      <span class="filtre-label">Vibe</span>
+      <div class="filtre-boutons" id="filtre-vibe"></div>
+    </div>
+
+    <!-- Bouton pour tout réinitialiser -->
+    <button id="btn-reset" onclick="resetFiltres()">✕ Réinitialiser</button>
+
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <main id="galerie">
+    <!-- Les cartes recettes sont injectées ici par app.js -->
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

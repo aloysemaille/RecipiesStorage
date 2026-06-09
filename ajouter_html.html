@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajouter une recette</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="btn-retour">← Retour</a>
+    <h1>Ajouter une recette</h1>
+  </header>
+
+  <!-- ===== FORMULAIRE ===== -->
+  <main id="formulaire-wrapper">
+
+    <!-- Champ : token GitHub (jamais sauvegardé, juste en mémoire) -->
+    <div class="champ">
+      <label for="token">🔑 Token GitHub <small>(ne sera pas sauvegardé)</small></label>
+      <input type="password" id="token" placeholder="ghp_xxxxxxxxxxxx" />
+    </div>
+
+    <!-- Champ : nom de la recette -->
+    <div class="champ">
+      <label for="nom">Nom du plat *</label>
+      <input type="text" id="nom" placeholder="Ex : Pad Thaï aux crevettes" required />
+    </div>
+
+    <!-- Champ : catégorie -->
+    <div class="champ">
+      <label for="categorie">Catégorie *</label>
+      <select id="categorie" required>
+        <option value="">-- Choisir --</option>
+        <option value="salé">Salé</option>
+        <option value="sucré">Sucré</option>
+        <option value="boisson">Boisson</option>
+      </select>
+    </div>
+
+    <!-- Champ : culture / origine -->
+    <div class="champ">
+      <label for="culture">Culture / Origine *</label>
+      <input type="text" id="culture" placeholder="Ex : Thaï, Italien, Marocain..." required />
+    </div>
+
+    <!-- Champ : protéine principale -->
+    <div class="champ">
+      <label for="proteine">Protéine principale</label>
+      <select id="proteine">
+        <option value="">-- Choisir --</option>
+        <option value="viande">Viande</option>
+        <option value="poisson/fruits de mer">Poisson / Fruits de mer</option>
+        <option value="végétal">Végétal</option>
+        <option value="oeuf">Oeuf</option>
+        <option value="aucun">Aucun</option>
+      </select>
+    </div>
+
+    <!-- Champ : glucide principal -->
+    <div class="champ">
+      <label for="glucide">Glucide principal</label>
+      <select id="glucide">
+        <option value="">-- Choisir --</option>
+        <option value="riz">Riz</option>
+        <option value="nouilles">Nouilles / Pâtes</option>
+        <option value="pain">Pain</option>
+        <option value="légumineuses">Légumineuses</option>
+        <option value="aucun">Aucun</option>
+      </select>
+    </div>
+
+    <!-- Champ : vibes (plusieurs choix possibles) -->
+    <div class="champ">
+      <label>Vibe <small>(plusieurs choix possibles)</small></label>
+      <div class="cases-a-cocher">
+        <label><input type="checkbox" value="réconfortant" /> Réconfortant</label>
+        <label><input type="checkbox" value="léger" /> Léger</label>
+        <label><input type="checkbox" value="festif" /> Festif</label>
+        <label><input type="checkbox" value="rapide" /> Rapide</label>
+        <label><input type="checkbox" value="cocooning" /> Cocooning</label>
+        <label><input type="checkbox" value="été" /> Été</label>
+        <label><input type="checkbox" value="hiver" /> Hiver</label>
+      </div>
+    </div>
+
+    <!-- Champ : temps de préparation -->
+    <div class="champ">
+      <label for="temps">Temps de préparation (minutes)</label>
+      <input type="number" id="temps" placeholder="Ex : 30" min="1" />
+    </div>
+
+    <!-- Champ : image URL -->
+    <div class="champ">
+      <label for="image">URL de l'image <small>(uploadez sur imgbb.com puis collez le lien)</small></label>
+      <input type="url" id="image" placeholder="https://i.ibb.co/..." />
+    </div>
+
+    <!-- Champ : recette disponible ? -->
+    <div class="champ">
+      <label for="recette">Recette complète disponible ?</label>
+      <select id="recette">
+        <option value="false">Non — juste une idée</option>
+        <option value="true">Oui</option>
+      </select>
+    </div>
+
+    <!-- Champ : notes libres -->
+    <div class="champ">
+      <label for="notes">Notes / remarques</label>
+      <textarea id="notes" placeholder="Ex : Meilleur avec sauce tamarin maison..."></textarea>
+    </div>
+
+    <!-- Bouton de sauvegarde -->
+    <button id="btn-sauvegarder" onclick="sauvegarder()">💾 Sauvegarder</button>
+
+    <!-- Message de retour (succès ou erreur) -->
+    <p id="message"></p>
+
+  </main>
+
+  <script src="github.js"></script>
+</body>
+</html>
