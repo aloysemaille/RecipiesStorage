@@ -1,12 +1,15 @@
 [
   {
     "id": "pad-thai-crevettes",
-    "nom": "Pad Thaï aux crevettes",
-    "categorie": "salé",
-    "culture": "Thaï",
+    "nom": "Pad ThaÃ¯ aux crevettes",
+    "categorie": "salÃ©",
+    "culture": "ThaÃ¯",
     "proteine": "poisson/fruits de mer",
     "glucide": "nouilles",
-    "vibe": ["réconfortant", "été"],
+    "vibe": [
+      "rÃ©confortant",
+      "Ã©tÃ©"
+    ],
     "temps": 30,
     "image": null,
     "recette": false,
@@ -15,12 +18,30 @@
   {
     "id": "tiramisu",
     "nom": "Tiramisu",
-    "categorie": "sucré",
+    "categorie": "sucrÃ©",
     "culture": "Italien",
     "proteine": "oeuf",
     "glucide": "aucun",
-    "vibe": ["réconfortant", "festif"],
+    "vibe": [
+      "rÃ©confortant",
+      "festif"
+    ],
     "temps": 25,
+    "image": null,
+    "recette": true,
+    "notes": null
+  },
+  {
+    "id": "salade-pomme-de-terreharicots-vertsthon",
+    "nom": "Salade pomme de terre/haricots-verts/thon",
+    "categorie": "salé",
+    "culture": "Famille",
+    "proteine": "poisson/fruits de mer",
+    "glucide": "légumineuses",
+    "vibe": [
+      "réconfortant"
+    ],
+    "temps": null,
     "image": null,
     "recette": true,
     "notes": null
